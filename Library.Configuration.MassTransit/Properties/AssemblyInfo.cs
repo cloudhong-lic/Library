@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Library.Testing.EntityFramework")]
-[assembly: AssemblyDescription("Testing extensions for EF (FakeDbSet)")]
+[assembly: AssemblyTitle("Library.Configuration.MassTransit")]
+[assembly: AssemblyDescription("Helpers for setting up MassTransit service bus with RabbitMQ transport")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Cloud Hong")]
-[assembly: AssemblyProduct("Library.Testing.EntityFramework")]
+[assembly: AssemblyCompany("Livestock Improvement")]
+[assembly: AssemblyProduct("Library.Configuration.MassTransit")]
 [assembly: AssemblyCopyright("Copyright © Livestock Improvement 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7760bb05-683c-44c2-93f1-7af9b94d2659")]
+[assembly: Guid("e9e423e3-75ce-4c49-ac3e-fdc14be7ee69")]
 
 // Version information for an assembly consists of the following four values:
 //

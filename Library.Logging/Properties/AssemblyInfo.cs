@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Library.Testing.EntityFramework")]
-[assembly: AssemblyDescription("Testing extensions for EF (FakeDbSet)")]
+[assembly: AssemblyTitle("Library.Logging")]
+[assembly: AssemblyDescription("Logging conventions")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Cloud Hong")]
-[assembly: AssemblyProduct("Library.Testing.EntityFramework")]
+[assembly: AssemblyCompany("Livestock Improvement")]
+[assembly: AssemblyProduct("Library.Logging")]
 [assembly: AssemblyCopyright("Copyright © Livestock Improvement 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7760bb05-683c-44c2-93f1-7af9b94d2659")]
+[assembly: Guid("1f3de779-233c-4806-b346-7ff22ba5563e")]
 
 // Version information for an assembly consists of the following four values:
 //
