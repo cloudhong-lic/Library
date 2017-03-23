@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Configuration.MassTransit", "Library.Configuration.MassTransit\Library.Configuration.MassTransit.csproj", "{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{8E15B31C-DA42-49B6-B2D9-13DD01B41A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.WebApi", "Library.WebApi\Library.WebApi.csproj", "{B94066E4-4333-41C6-B039-EDBC442F3495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94066E4-4333-41C6-B039-EDBC442F3495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94066E4-4333-41C6-B039-EDBC442F3495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94066E4-4333-41C6-B039-EDBC442F3495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94066E4-4333-41C6-B039-EDBC442F3495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +58,6 @@ Global
 		{F5757E71-ABD0-4E28-A700-C872EC07EC58} = {201132CE-8546-4360-9E35-261DBF3C9A0D}
 		{1F3DE779-233C-4806-B346-7FF22BA5563E} = {8FFAB2C6-7215-4C64-8CBB-D0A7AE9ADEBD}
 		{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69} = {85FB18CC-006F-4ED5-87C0-E23F518863BB}
+		{B94066E4-4333-41C6-B039-EDBC442F3495} = {8E15B31C-DA42-49B6-B2D9-13DD01B41A77}
 	EndGlobalSection
 EndGlobal
