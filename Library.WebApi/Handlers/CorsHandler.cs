@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -63,25 +64,23 @@ namespace Library.WebApi.Handlers
 						response.Headers.Add(AccessControlAllowCredentials, "true");
 					}
 
-					string accessControlRequestMethod = request.Headers.GetValues(AccessControlRequestMethod).FirstOrDefault();
-					if (accessControlRequestMethod != null)
+					IEnumerable<string> requestedMethods;
+					if (request.Headers.TryGetValues(AccessControlRequestMethod, out requestedMethods))
 					{
-						response.Headers.Add(AccessControlAllowMethods, accessControlRequestMethod);
+						response.Headers.Add(AccessControlAllowMethods, string.Join(", ", requestedMethods));
 					}
 
-					string requestedHeaders = string.Join(", ", request.Headers.GetValues(AccessControlRequestHeaders));
-					if (!string.IsNullOrEmpty(requestedHeaders))
+					IEnumerable<string> requestedHeaders;
+					if (request.Headers.TryGetValues(AccessControlRequestHeaders, out requestedHeaders))
 					{
-						response.Headers.Add(AccessControlAllowHeaders, requestedHeaders);
+						response.Headers.Add(AccessControlAllowHeaders, string.Join(", ", requestedHeaders));
 					}
 
-					TaskCompletionSource<HttpResponseMessage> tcs = new TaskCompletionSource<HttpResponseMessage>();
-					tcs.SetResult(response);
-					return tcs.Task;
+					return Task.FromResult(response);
 				}
 				else
 				{
-					return base.SendAsync(request, cancellationToken).ContinueWith<HttpResponseMessage>(t =>
+					return base.SendAsync(request, cancellationToken).ContinueWith(t =>
 					{
 						HttpResponseMessage response = t.Result;
 						if (_allowedOrigins.Contains(request.Headers.GetValues(Origin).First()))
@@ -94,7 +93,7 @@ namespace Library.WebApi.Handlers
 						}
 
 						return response;
-					});
+					}, cancellationToken);
 				}
 			}
 			else
