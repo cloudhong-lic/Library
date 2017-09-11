@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\ValidateModelAttribute.cs" />
     <Compile Include="Filters\WebApiCacheAttribute.cs" />
     <Compile Include="FriendlyHttpResponseException.cs" />
     <Compile Include="Handlers\CorsHandler.cs" />
