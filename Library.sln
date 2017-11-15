@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Testing.EntityFramework", "Library.Testing.EntityFramework\Library.Testing.EntityFramework.csproj", "{7760BB05-683C-44C2-93F1-7AF9B94D2659}"
 EndProject
@@ -66,5 +66,8 @@ Global
 		{E9E423E3-75CE-4C49-AC3E-FDC14BE7EE69} = {85FB18CC-006F-4ED5-87C0-E23F518863BB}
 		{B94066E4-4333-41C6-B039-EDBC442F3495} = {8E15B31C-DA42-49B6-B2D9-13DD01B41A77}
 		{8CCC5541-6565-4AF6-9FC0-9349CF19D775} = {8FFAB2C6-7215-4C64-8CBB-D0A7AE9ADEBD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A108E397-D100-4EAF-85E1-19B34EDA53C9}
 	EndGlobalSection
 EndGlobal
