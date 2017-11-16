@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cloud Hong")]
 [assembly: AssemblyProduct("Library.Testing.EntityFramework")]
-[assembly: AssemblyCopyright("Copyright © Livestock Improvement 2017")]
+[assembly: AssemblyCopyright("Copyright © None 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

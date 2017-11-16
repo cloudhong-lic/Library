@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Library.Configuration.MassTransit")]
 [assembly: AssemblyDescription("Helpers for setting up MassTransit service bus with RabbitMQ transport")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Livestock Improvement")]
+[assembly: AssemblyCompany("None")]
 [assembly: AssemblyProduct("Library.Configuration.MassTransit")]
-[assembly: AssemblyCopyright("Copyright © Livestock Improvement 2017")]
+[assembly: AssemblyCopyright("Copyright © None 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
